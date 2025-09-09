@@ -1,0 +1,41 @@
+html {
+    font-size: 14px;
+    background-color: white; /* CMS background */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: white; /* Ensure body is white */
+    margin: 0; /* Reset default body margin */
+}
+
+/* Full-width heading banners */
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    width: 100%; /* Stretch full width */
+    background-color: #4169E1; /* Royal Blue */
+    color: white; /* White text */
+    font-weight: bold; /* Bold text */
+    padding: 15px 20px; /* Spacing inside the banner */
+    margin: 0 0 20px 0; /* Space below each heading */
+    box-sizing: border-box; /* Prevents padding from breaking layout */
+}

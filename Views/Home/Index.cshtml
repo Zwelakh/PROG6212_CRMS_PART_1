@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<!--Login Form-->
+<form method="post" action="/Home/Dashboard">
+    <input type ="email" placeholder="Enter Email"/>
+    <br/>
+    <input type="password" placeholder="Enter Password"/>
+    <br/>
+    <input type="submit" value="Login"/>
+</form>
+<br/>
+
+<!--Link To Open Register Page-->
+<p> Don't Have An Account Yet?</p>
+<p><a href=@Url.Action("Register")>Register Here</a></p>

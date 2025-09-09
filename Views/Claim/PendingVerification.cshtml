@@ -1,0 +1,29 @@
+﻿@model IEnumerable<PROG6212_CRMS_PART_1.Models.ClaimModel>
+
+<h2>Claims Pending Verification</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Submission Date</th>
+            <th>Lecturer</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.ClaimID</td>
+                <td>@claim.SubmissionDate.ToShortDateString()</td>
+                <td>@claim.LecturerName</td>
+                <td>@claim.Status</td>
+                <td>
+                    <a href="@Url.Action("Verify", "Claim", new { id = claim.ClaimID })" class="btn btn-success">Verify</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
